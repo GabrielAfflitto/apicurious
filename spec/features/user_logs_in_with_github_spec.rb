@@ -9,11 +9,9 @@ RSpec.feature "user can log in" do
       info: {
         email: "gabe@gmail.com",
         name: "Gabriel Afflitto",
+        image: "https://avatars2.githubcontent.com"
       },
-      credentials: {
-        token: "abcdefg12345",
-        expires: false
-      }
+      credentials: {token: "a3jh34jh5g34gjj4hg35jh"}
     })
   end
 
@@ -29,7 +27,6 @@ RSpec.feature "user can log in" do
       expect(page).to have_content("Sign in with Github")
 
       click_link "Sign in with Github"
-
       expect(page).to have_content("Gabriel Afflitto")
       expect(page).to have_content("Logout")
     end
