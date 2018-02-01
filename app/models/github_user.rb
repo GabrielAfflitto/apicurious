@@ -14,6 +14,18 @@ class GithubUser
     end
   end
 
+  def commits
+    current_week = Date.today.cweek
+    weekly_commits = []
+    github.user_commits[:items].each do |commit|
+      if Date.parse(commit[:commit][:committer][:date]).cweek == current_week
+        weekly_commits << commit
+      end
+    end
+    weekly_commits.first(10)
+    # binding.pry
+  end
+
   def repos
     github.user_repos
   end

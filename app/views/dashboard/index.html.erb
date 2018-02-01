@@ -27,6 +27,12 @@ Company: <%= @user.company %>
   <% end %>
 <% end %>
 <br>
+Recent commits from the week: <% @user.commits.each do |commit| %>
+<%= Date.parse(commit[:commit][:committer][:date]) %>
+<%= commit[:repository][:full_name] %>
+<%= commit[:commit][:message] %>
+<% end %>
+<br>
 Repositories: <%= @user.repos.count %>
 <br>
 <%= @user.repos.first(6) %>
