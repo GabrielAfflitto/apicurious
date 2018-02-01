@@ -8,7 +8,6 @@ class User < ApplicationRecord
                        email: auth[:info][:email],
                        token: auth[:credentials][:token]
                       }
-                      # binding.pry
     user.save!
     user
   end

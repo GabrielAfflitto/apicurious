@@ -1,0 +1,32 @@
+<% if current_user %>
+  <%= current_user.name %>
+  <br>
+  <%= current_user.nickname %>
+  <br>
+  <%= current_user.email %>
+  <br>
+  <%= image_tag(@user.user_image) %>
+  <%= link_to "Logout", logout_path %>
+<% else %>
+  <%= link_to "Sign in with Github", "/auth/github" %>
+<% end %>
+<br>
+Bio: <%= @user.user_bio %>
+<br>
+Followers: <%= @user.user_followers %>
+<br>
+Following: <%= @user.user_following %>
+<br>
+Stars: <%= @user.user_number_of_starred_repos %>
+<br>
+Company: <%= @user.company %>
+<% if @user.organizations.count > 0 %>
+  <h4>Organizations</h4>
+  <% @user.organizations.each do |org| %>
+    <%= image_tag(org) %>
+  <% end %>
+<% end %>
+<br>
+Repositories: <%= @user.repos.count %>
+<br>
+<%= @user.repos.first(6) %>
