@@ -29,10 +29,22 @@ class GithubService
     b = JSON.parse(response.body, symbolize_names: true)
   end
 
-  def user_commits
-    response = @conn.get("/search/commits?q=committer:#{@user.nickname}", per_page: 100)
+  def user_commits(user)
+    response = @conn.get("/search/commits?q=committer:#{user}", per_page: 100)
     b = JSON.parse(response.body, symbolize_names: true)
     # binding.pry
+  end
+
+  def following
+    response = @conn.get("/user/following")
+    b = JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def detailed_following_info
+    following.map do |followed_person|
+      response = @conn.get("/users/#{followed_person[:login]}")
+      b = JSON.parse(response.body, symbolize_names: true)
+    end
   end
 
 end

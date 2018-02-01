@@ -17,7 +17,7 @@ class GithubUser
   def commits
     current_week = Date.today.cweek
     weekly_commits = []
-    github.user_commits[:items].each do |commit|
+    github.user_commits(@user.nickname)[:items].each do |commit|
       if Date.parse(commit[:commit][:committer][:date]).cweek == current_week
         weekly_commits << commit
       end
@@ -58,6 +58,7 @@ class GithubUser
 
     def github
       @github ||= GithubService.new(@user)
+      binding.pry
     end
 
 end
