@@ -1,12 +1,1 @@
-
-<% if current_user %>
-  <%= current_user.name %>
-  <br>
-  <%= current_user.nickname %>
-  <br>
-  <%= current_user.email %>
-  <br>
-  <%= link_to "Logout", logout_path %>
-<% else %>
-  <%= link_to "Sign in with Github", "/auth/github" %>
-<% end %>
+<%= link_to "Sign in with Github", "/auth/github" %>
