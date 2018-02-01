@@ -1,3 +1,4 @@
+
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
@@ -9,7 +10,7 @@ require 'rspec/rails'
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/cassettes"
   config.hook_into :webmock # or :fakeweb
-  config.filter_sensitive_data("<github_api_key>") {ENV["GITHUB_KEY"]} 
+  config.filter_sensitive_data("<github_api_key>") {ENV["GITHUB_SECRET"]} 
 end
 # Add additional requires below this line. Rails is not loaded until this point!
 
