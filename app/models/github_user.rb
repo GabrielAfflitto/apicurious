@@ -15,19 +15,17 @@ class GithubUser
   end
 
   def commits
-    current_week = Date.today.cweek
-    weekly_commits = []
-    github.user_commits[:items].each do |commit|
-      if Date.parse(commit[:commit][:committer][:date]).cweek == current_week
-        weekly_commits << commit
-      end
+    github.user_commits(@user.nickname)[:items].map do |commit|
+      Commit.new(commit)
     end
-    weekly_commits.first(10)
-    # binding.pry
+
   end
 
   def repos
-    github.user_repos
+    github.user_repos.each.map do |repo|
+      Repo.new(repo)
+    end
+    # binding.pry
   end
 
   def company
@@ -58,6 +56,7 @@ class GithubUser
 
     def github
       @github ||= GithubService.new(@user)
+      # binding.pry
     end
 
 end

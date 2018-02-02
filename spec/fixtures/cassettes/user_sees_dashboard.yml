@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - token a3jh34jh5g34gjj4hg35jh
+      - token a1d22996d5e2abc45e3e0e2d937019784a4e17b2
       Accept:
       - application/vnd.github.cloak-preview
       User-Agent:
@@ -23,255 +23,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Fri, 02 Feb 2018 02:50:42 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '83'
-      Status:
-      - 401 Unauthorized
-      X-Github-Media-Type:
-      - github.cloak-preview
-      X-Ratelimit-Limit:
-      - '60'
-      X-Ratelimit-Remaining:
-      - '4'
-      X-Ratelimit-Reset:
-      - '1517541256'
-      Access-Control-Expose-Headers:
-      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
-        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
-      Access-Control-Allow-Origin:
-      - "*"
-      Content-Security-Policy:
-      - default-src 'none'
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubdomains; preload
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - deny
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Runtime-Rack:
-      - '0.013549'
-      X-Github-Request-Id:
-      - C3CC:0B60:17BADAA:30D9F1B:5A73D202
-    body:
-      encoding: UTF-8
-      string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
-    http_version: 
-  recorded_at: Fri, 02 Feb 2018 02:50:42 GMT
-- request:
-    method: get
-    uri: https://api.github.com/user
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Authorization:
-      - token a3jh34jh5g34gjj4hg35jh
-      Accept:
-      - application/vnd.github.cloak-preview
-      User-Agent:
-      - Faraday v0.12.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 401
-      message: Unauthorized
-    headers:
-      Server:
-      - GitHub.com
-      Date:
-      - Fri, 02 Feb 2018 02:50:42 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '83'
-      Status:
-      - 401 Unauthorized
-      X-Github-Media-Type:
-      - github.cloak-preview
-      X-Ratelimit-Limit:
-      - '60'
-      X-Ratelimit-Remaining:
-      - '3'
-      X-Ratelimit-Reset:
-      - '1517541256'
-      Access-Control-Expose-Headers:
-      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
-        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
-      Access-Control-Allow-Origin:
-      - "*"
-      Content-Security-Policy:
-      - default-src 'none'
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubdomains; preload
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - deny
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Runtime-Rack:
-      - '0.012612'
-      X-Github-Request-Id:
-      - C3CD:0B62:142AB1A:33C6F2F:5A73D202
-    body:
-      encoding: UTF-8
-      string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
-    http_version: 
-  recorded_at: Fri, 02 Feb 2018 02:50:42 GMT
-- request:
-    method: get
-    uri: https://api.github.com/user
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Authorization:
-      - token a3jh34jh5g34gjj4hg35jh
-      Accept:
-      - application/vnd.github.cloak-preview
-      User-Agent:
-      - Faraday v0.12.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 401
-      message: Unauthorized
-    headers:
-      Server:
-      - GitHub.com
-      Date:
-      - Fri, 02 Feb 2018 02:50:42 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '83'
-      Status:
-      - 401 Unauthorized
-      X-Github-Media-Type:
-      - github.cloak-preview
-      X-Ratelimit-Limit:
-      - '60'
-      X-Ratelimit-Remaining:
-      - '2'
-      X-Ratelimit-Reset:
-      - '1517541256'
-      Access-Control-Expose-Headers:
-      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
-        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
-      Access-Control-Allow-Origin:
-      - "*"
-      Content-Security-Policy:
-      - default-src 'none'
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubdomains; preload
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - deny
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Runtime-Rack:
-      - '0.013118'
-      X-Github-Request-Id:
-      - C3CE:0B62:142AB25:33C6F48:5A73D202
-    body:
-      encoding: UTF-8
-      string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
-    http_version: 
-  recorded_at: Fri, 02 Feb 2018 02:50:42 GMT
-- request:
-    method: get
-    uri: https://api.github.com/user
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Authorization:
-      - token a3jh34jh5g34gjj4hg35jh
-      Accept:
-      - application/vnd.github.cloak-preview
-      User-Agent:
-      - Faraday v0.12.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 401
-      message: Unauthorized
-    headers:
-      Server:
-      - GitHub.com
-      Date:
-      - Fri, 02 Feb 2018 02:50:42 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '83'
-      Status:
-      - 401 Unauthorized
-      X-Github-Media-Type:
-      - github.cloak-preview
-      X-Ratelimit-Limit:
-      - '60'
-      X-Ratelimit-Remaining:
-      - '1'
-      X-Ratelimit-Reset:
-      - '1517541256'
-      Access-Control-Expose-Headers:
-      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
-        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
-      Access-Control-Allow-Origin:
-      - "*"
-      Content-Security-Policy:
-      - default-src 'none'
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubdomains; preload
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - deny
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Runtime-Rack:
-      - '0.014606'
-      X-Github-Request-Id:
-      - C3CF:0B61:109584B:246CF43:5A73D202
-    body:
-      encoding: UTF-8
-      string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
-    http_version: 
-  recorded_at: Fri, 02 Feb 2018 02:50:42 GMT
-- request:
-    method: get
-    uri: https://api.github.com/user
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Authorization:
-      - token a3jh34jh5g34gjj4hg35jh
-      Accept:
-      - application/vnd.github.cloak-preview
-      User-Agent:
-      - Faraday v0.12.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 401
-      message: Unauthorized
-    headers:
-      Server:
-      - GitHub.com
-      Date:
-      - Fri, 02 Feb 2018 02:50:43 GMT
+      - Fri, 02 Feb 2018 02:50:44 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -302,14 +54,262 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Runtime-Rack:
-      - '0.018119'
+      - '0.016334'
       X-Github-Request-Id:
-      - C3D0:0B60:17BADDC:30D9F91:5A73D203
+      - C3D4:0B61:1095894:246CFD2:5A73D204
     body:
       encoding: UTF-8
       string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
     http_version: 
-  recorded_at: Fri, 02 Feb 2018 02:50:43 GMT
+  recorded_at: Fri, 02 Feb 2018 02:50:44 GMT
+- request:
+    method: get
+    uri: https://api.github.com/user
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - token a1d22996d5e2abc45e3e0e2d937019784a4e17b2
+      Accept:
+      - application/vnd.github.cloak-preview
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 02 Feb 2018 02:50:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '83'
+      Status:
+      - 401 Unauthorized
+      X-Github-Media-Type:
+      - github.cloak-preview
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '0'
+      X-Ratelimit-Reset:
+      - '1517541256'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.014385'
+      X-Github-Request-Id:
+      - C3D5:0B60:17BAE59:30DA07C:5A73D204
+    body:
+      encoding: UTF-8
+      string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
+    http_version: 
+  recorded_at: Fri, 02 Feb 2018 02:50:44 GMT
+- request:
+    method: get
+    uri: https://api.github.com/user
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - token a1d22996d5e2abc45e3e0e2d937019784a4e17b2
+      Accept:
+      - application/vnd.github.cloak-preview
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 02 Feb 2018 02:50:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '83'
+      Status:
+      - 401 Unauthorized
+      X-Github-Media-Type:
+      - github.cloak-preview
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '0'
+      X-Ratelimit-Reset:
+      - '1517541256'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.023913'
+      X-Github-Request-Id:
+      - C3D6:0B60:17BAE76:30DA0B3:5A73D204
+    body:
+      encoding: UTF-8
+      string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
+    http_version: 
+  recorded_at: Fri, 02 Feb 2018 02:50:44 GMT
+- request:
+    method: get
+    uri: https://api.github.com/user
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - token a1d22996d5e2abc45e3e0e2d937019784a4e17b2
+      Accept:
+      - application/vnd.github.cloak-preview
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 02 Feb 2018 02:50:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '83'
+      Status:
+      - 401 Unauthorized
+      X-Github-Media-Type:
+      - github.cloak-preview
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '0'
+      X-Ratelimit-Reset:
+      - '1517541256'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.015469'
+      X-Github-Request-Id:
+      - C3D7:0B61:10958C1:246D024:5A73D204
+    body:
+      encoding: UTF-8
+      string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
+    http_version: 
+  recorded_at: Fri, 02 Feb 2018 02:50:45 GMT
+- request:
+    method: get
+    uri: https://api.github.com/user
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - token a1d22996d5e2abc45e3e0e2d937019784a4e17b2
+      Accept:
+      - application/vnd.github.cloak-preview
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 02 Feb 2018 02:50:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '83'
+      Status:
+      - 401 Unauthorized
+      X-Github-Media-Type:
+      - github.cloak-preview
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '0'
+      X-Ratelimit-Reset:
+      - '1517541256'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.013703'
+      X-Github-Request-Id:
+      - C3D8:0B5F:BBE8C8:1B5B10C:5A73D205
+    body:
+      encoding: UTF-8
+      string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
+    http_version: 
+  recorded_at: Fri, 02 Feb 2018 02:50:45 GMT
 - request:
     method: get
     uri: https://api.github.com/user/starred
@@ -318,7 +318,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - token a3jh34jh5g34gjj4hg35jh
+      - token a1d22996d5e2abc45e3e0e2d937019784a4e17b2
       Accept:
       - application/vnd.github.cloak-preview
       User-Agent:
@@ -333,7 +333,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Fri, 02 Feb 2018 02:50:43 GMT
+      - Fri, 02 Feb 2018 02:50:45 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -364,14 +364,14 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Runtime-Rack:
-      - '0.013157'
+      - '0.009487'
       X-Github-Request-Id:
-      - C3D1:0B61:109586A:246CF74:5A73D203
+      - C3D9:0B61:10958DE:246D057:5A73D205
     body:
       encoding: UTF-8
       string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
     http_version: 
-  recorded_at: Fri, 02 Feb 2018 02:50:43 GMT
+  recorded_at: Fri, 02 Feb 2018 02:50:45 GMT
 - request:
     method: get
     uri: https://api.github.com/user
@@ -380,7 +380,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - token a3jh34jh5g34gjj4hg35jh
+      - token a1d22996d5e2abc45e3e0e2d937019784a4e17b2
       Accept:
       - application/vnd.github.cloak-preview
       User-Agent:
@@ -395,7 +395,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Fri, 02 Feb 2018 02:50:43 GMT
+      - Fri, 02 Feb 2018 02:50:45 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -426,14 +426,14 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Runtime-Rack:
-      - '0.011370'
+      - '0.013784'
       X-Github-Request-Id:
-      - C3D2:0B60:17BAE10:30D9FFA:5A73D203
+      - C3DA:0B62:142ABB5:33C7153:5A73D205
     body:
       encoding: UTF-8
       string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
     http_version: 
-  recorded_at: Fri, 02 Feb 2018 02:50:43 GMT
+  recorded_at: Fri, 02 Feb 2018 02:50:45 GMT
 - request:
     method: get
     uri: https://api.github.com/user/orgs
@@ -442,7 +442,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - token a3jh34jh5g34gjj4hg35jh
+      - token a1d22996d5e2abc45e3e0e2d937019784a4e17b2
       Accept:
       - application/vnd.github.cloak-preview
       User-Agent:
@@ -457,7 +457,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Fri, 02 Feb 2018 02:50:43 GMT
+      - Fri, 02 Feb 2018 02:50:45 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -488,12 +488,12 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Runtime-Rack:
-      - '0.012368'
+      - '0.011359'
       X-Github-Request-Id:
-      - C3D3:0B60:17BAE28:30DA029:5A73D203
+      - C3DB:0B62:142ABC2:33C717A:5A73D205
     body:
       encoding: UTF-8
       string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
     http_version: 
-  recorded_at: Fri, 02 Feb 2018 02:50:43 GMT
+  recorded_at: Fri, 02 Feb 2018 02:50:46 GMT
 recorded_with: VCR 4.0.0
