@@ -30,9 +30,9 @@ class GithubService
   end
 
   def user_commits(user)
-    response = @conn.get("/search/commits?q=committer:#{user}", per_page: 100)
+    last_week = 1.week.ago.strftime("%Y-%m-%d")
+    response = @conn.get("/search/commits?q=committer:#{user}+committer-date:>#{last_week}", per_page: 10)
     b = JSON.parse(response.body, symbolize_names: true)
-    # binding.pry
   end
 
   def following
