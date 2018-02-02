@@ -1,41 +1,64 @@
-<% if current_user %>
-  <%= current_user.name %>
-  <br>
-  <%= current_user.nickname %>
-  <br>
-  <%= current_user.email %>
-  <br>
-  <%= image_tag(@user.user_image) %>
-  <%= link_to "Logout", logout_path %>
-<% else %>
-  <%= link_to "Sign in with Github", "/auth/github" %>
-<% end %>
-<br>
-Bio: <%= @user.user_bio %>
-<br>
-Followers: <%= @user.user_followers %>
-<br>
-Following: <%= @user.user_following %>
-<br>
-Stars: <%= @user.user_number_of_starred_repos %>
-<br>
-Company: <%= @user.company %>
-<% if @user.organizations.count > 0 %>
-  <h4>Organizations</h4>
-  <% @user.organizations.each do |org| %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header>
+
+    </header>
+
+    <% if current_user %>
+    <%= current_user.name %>
+    <br>
+    <%= current_user.nickname %>
+    <br>
+    <%= current_user.email %>
+    <br>
+    <div class="avatar">
+      <%= image_tag(@user.user_image) unless @user.user_image.blank? %>
+    </div>
+    <%= link_to "Logout", logout_path %>
+    <% else %>
+    <%= link_to "Sign in with Github", "/auth/github" %>
+    <% end %>
+    <br>
+    Bio: <%= @user.user_bio %>
+    <br>
+    Followers: <%= @user.user_followers %>
+    <br>
+    Following: <%= @user.user_following %>
+    <br>
+    Stars: <%= @user.user_number_of_starred_repos %>
+    <br>
+    Company: <%= @user.company %>
+    <% if @user.organizations.count > 0 %>
+    <h4>Organizations</h4>
+    <% @user.organizations.each do |org| %>
     <%= image_tag(org) %>
-  <% end %>
-<% end %>
-<br>
-<div class="commits">
-  Recent commits from the week: <% @user.commits.each do |commit| %>
-  <div class="commit">
-    <%= commit.date %>
-    <%= commit.full_name %>
-    <%= commit.message %>
-  </div>
-  <% end %>
-</div>
-Repositories: <%= @user.repos.count %>
-<br>
-<%= @user.repos.first(6) %>
+    <% end %>
+    <% end %>
+    <br>
+    <div class="commits">
+      Recent commits from the week: <% @user.commits.each do |commit| %>
+      <div class="commit">
+        <%= commit.date %>
+        <%= commit.full_name %>
+        <%= commit.message %>
+      </div>
+      <% end %>
+    </div>
+    Repositories: <%= @user.repos.count %>
+    <br>
+    <div class="repos">
+      <% @user.repos.first(6).each do |repo| %>
+      <div class="commit">
+        <%= repo.name %>
+        <%= repo.description %>
+        <%= repo.language %>
+      </div>
+      <% end %>
+    </div>
+  </body>
+</html>
